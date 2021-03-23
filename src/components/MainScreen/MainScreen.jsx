@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import style from './MainScreen.module.css'
 
 
 const MainScreen = (props) => {
@@ -18,7 +19,7 @@ const MainScreen = (props) => {
 
     return (
         <div>
-            <h2>Список актуальных задач</h2>
+            <h2 className={style.title}>Список актуальных задач</h2>
             <ul>{liData}</ul>
             <NavLink to="/create">Создать проект</NavLink>
             <NavLink to="/done-projects">Законченные</NavLink>
