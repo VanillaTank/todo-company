@@ -1,5 +1,5 @@
 import React from 'react'
-import s from './Footer.module.css'
+import gt from './Footer.module.css'
 
 
 class Footer extends React.Component {
@@ -24,7 +24,7 @@ class Footer extends React.Component {
         })
 
         return (
-            <div className={s.footer}>
+            <div className={gt.footer}>
                 {postsData}
             </div>
         )
