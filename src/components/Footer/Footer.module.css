@@ -1,10 +1,7 @@
 .footer {
     margin-top: 20px;
-    height: 150px;
+    height: 101px;
     background-color: blue;
     width: 100%;
 }
 
-.foot {
-    border: 2px solid red;
-}
