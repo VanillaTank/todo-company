@@ -32,6 +32,7 @@
 .__projectlist__inner{
     width: 100%;
     display: inline;
+    margin-right: 40px;
 }
 .__projectlist__projects{
     width: 100%;
