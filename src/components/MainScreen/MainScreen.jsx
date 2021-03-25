@@ -18,9 +18,11 @@ const MainScreen = (props) => {
     })
 
     return (
-        <div>
+        <div className={style.container}>
             <h2 className={style.title}>Список актуальных задач</h2>
-            <ul>{liData}</ul>
+            <div className={style.ul_inner}>
+                <ul className={style.tasks}>{liData}</ul>
+            </div>
             <NavLink to="/create">Создать проект</NavLink>
             <NavLink to="/done-projects">Законченные</NavLink>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './Footer.module.css'
+import gt from './Footer.module.css'
 
 class Footer extends React.Component {
     state = { posts: [] }
@@ -12,6 +12,8 @@ class Footer extends React.Component {
 
     render() {
 
+        const sstyle = gt.footer + " " + gt.foot
+
         let postsData = this.state.posts.map(item => {
             return (
                 <div>
@@ -22,8 +24,8 @@ class Footer extends React.Component {
             )
         })
 
-        return (
-            <div className={style.footer}>
+        return (           
+            <div className={sstyle}>
                 {postsData}
             </div>
         )

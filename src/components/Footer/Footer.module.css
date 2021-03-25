@@ -4,3 +4,7 @@
     background-color: blue;
     width: 100%;
 }
+
+.foot {
+    border: 2px solid red;
+}
