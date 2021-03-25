@@ -21,7 +21,7 @@ function App(props) {
 
   return (
     <BrowserRouter>
-      <div className={style.background}>
+      <div>
         
         <Route exact path={"/"} render ={ () =>< MainScreen data={inProcessProjects}/>}  />
         {tascRoute}

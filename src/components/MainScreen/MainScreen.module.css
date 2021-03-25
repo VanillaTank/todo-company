@@ -12,8 +12,7 @@
     margin-top: 0;
 }
 .__projectlist{
-    height: 625px;
-    text-align: left;
+    height: calc(100vh - 300px);
     overflow: auto;
     border-bottom: 1px solid #3c72ff ;
 }
@@ -97,7 +96,7 @@ button svg{
 
 .__buttonslinks{
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
 }
 .__button_link{
     margin: 25px;
