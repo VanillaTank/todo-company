@@ -9,9 +9,9 @@
     font-family: 'PT Serif', serif;
     font-size: 30px;
     font-weight: 300;
+    margin-top: 0;
 }
 .__projectlist{
-    display: flex;
     height: 625px;
     text-align: left;
     overflow: auto;
@@ -30,8 +30,6 @@
     background: #3c72ff;
 }
 .__projectlist__inner{
-    width: 100%;
-    display: inline;
     margin-right: 40px;
 }
 .__projectlist__projects{
@@ -84,6 +82,7 @@ button{
     border-radius: 5px;
 }
 button:hover{
+    cursor: pointer;
     opacity: 1;
 }
 button:active{
@@ -121,4 +120,12 @@ button svg{
 }
 .__button_link:active{
     background: #1e55e6; 
+}
+
+.background{
+    padding-top: 30px;
+    height: calc(100vh - 130px);
+    margin: 0; 
+    background: url("./background.png") no-repeat; 
+    background-size: cover;
 }

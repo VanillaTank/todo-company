@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route } from "react-router-dom"
-import './App.css';
+import style from './App.css';
 import MainScreen from './components/MainScreen/MainScreen'
 import TaskPage from './components/TaskPage/TaskPage'
 import Create from './components/Create/Create'
@@ -21,7 +21,7 @@ function App(props) {
 
   return (
     <BrowserRouter>
-      <div>
+      <div className={style.background}>
         
         <Route exact path={"/"} render ={ () =>< MainScreen data={inProcessProjects}/>}  />
         {tascRoute}
