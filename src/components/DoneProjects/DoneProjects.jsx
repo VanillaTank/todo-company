@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 const DoneProjects = (props) => {
 
     let liData = props.doneProjects.map(el => {
-        return (<li>
+        return (<li key={el.id}>
             <div>
                 <NavLink to={"/" + el.id}>{el.title}</NavLink>
                 <button>Не сделано</button>

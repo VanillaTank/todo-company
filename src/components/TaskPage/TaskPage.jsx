@@ -10,7 +10,7 @@ const TaskPage = (props) => {
     
     let activeTasksRender = activeTasks.map(el => {
         return (
-            <li><label>
+            <li key={el.id}><label>
                 <input type="checkbox"/> {el.text}
             </label></li>
         )
@@ -19,7 +19,7 @@ const TaskPage = (props) => {
     let doneTasks = props.taskData.tasks.filter(el => el.complete === "true")
     let doneTasksRender = doneTasks.map(el => {
         return (
-            <li><label>
+            <li key={el.id}><label>
                 <input type="checkbox" defaultChecked /> {el.text}
             </label></li>
         )

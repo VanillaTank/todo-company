@@ -14,7 +14,6 @@ const Create = (props) => {
         if(elName.indexOf('task_') > -1) {
            indexInput =  elName.slice(5)
         }
-        console.log(indexInput);
         props.dispatch( updateNewProjectText(text, elName, indexInput) )
     }
 
@@ -29,7 +28,7 @@ const Create = (props) => {
         
     }
 
-    let tasksInputs = props.newTaskData.tasks.map((el, index)=> <input type="text" onChange={inputChangeHandler} value={ el.text } placeholder="Задача" name={"task_" + index}/>)
+    let tasksInputs = props.newTaskData.tasks.map((el, index)=> <input key={index} type="text" onChange={inputChangeHandler} value={ el.text } placeholder="Задача" name={"task_" + index}/>)
 
     return (
         <div>

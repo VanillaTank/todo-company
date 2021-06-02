@@ -13,7 +13,7 @@ import Archive from './components/Archive/Archive'
 function App(props) {
   let tascRoute = props.state.dataProject.map(el => {
     return (
-      <Route path={"/" + el.id} render ={ () =><TaskPage taskData={el} data={props.state.dataProject}/>} />
+      <Route key={Math.random()} path={"/" + el.id} render ={ () =><TaskPage taskData={el} data={props.state.dataProject}/>} />
     )})
   let doneProjects = props.state.dataProject.filter(task => task.complete)  
   let inProcessProjects = props.state.dataProject.filter(task => !task.complete) 

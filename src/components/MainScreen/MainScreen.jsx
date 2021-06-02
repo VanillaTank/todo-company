@@ -6,7 +6,7 @@ import style from './MainScreen.module.css'
 const MainScreen = (props) => {
 
     let liData = props.data.map(el => {
-        return (<li>
+        return (<li key={el.id}>
             <div>
                 <NavLink to={"/" + el.id}>{el.title}</NavLink>
                 <button>
