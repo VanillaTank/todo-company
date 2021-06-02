@@ -1,0 +1,8 @@
+const actions = {
+    UPDATE_NEW_PROJECT_TEXT : "UPDATE_NEW_PROJECT_TEXT",
+    ADD_NEW_PROJECT : "ADD_NEW_PROJECT",
+    ADD_INPUT_TASKS : "ADD_INPUT_TASKS"
+}
+
+
+export default actions;

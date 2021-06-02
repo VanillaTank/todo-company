@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route } from "react-router-dom"
-import style from './App.css';
+// import style from './App.css';
 import MainScreen from './components/MainScreen/MainScreen'
 import TaskPage from './components/TaskPage/TaskPage'
 import Create from './components/Create/Create'
