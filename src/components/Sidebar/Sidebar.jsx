@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 const Sidebar = (props) => {
     let sidebarLi = props.data.map(el => {
         return (
-            <li><NavLink to={"/" + el.id}>{el.title}</NavLink></li>
+            <li key={el.id}><NavLink to={"/" + el.id}>{el.title}</NavLink></li>
         )
     })
 
