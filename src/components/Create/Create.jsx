@@ -18,7 +18,7 @@ const Create = (props) => {
     }
 
     let addProject = (e) => {
-        // e.preventDefault();
+        e.preventDefault();
         props.dispatch( addNewProject() )
     }
 

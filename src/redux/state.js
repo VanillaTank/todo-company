@@ -5,6 +5,9 @@ import D_ADD_NEW_PROJECT from "./dispatches/ADD_NEW_PROJECT.js"
 import D_ADD_INPUT_TASKS from "./dispatches/ADD_INPUT_TASKS.js"
 import D_MOVE_CARD_TO_ARCHIVE from "./dispatches/D_MOVE_CARD_TO_ARCHIVE.js"
 import D_MOVE_CARD_TO_INPROCASS from "./dispatches/D_MOVE_CARD_TO_INPROCASS.js"
+import D_DELETE_PROJECT from "./dispatches/D_DELETE_PROJECT.js"
+import D_MOVE_IN_NOT_DONE from "./dispatches/D_MOVE_IN_NOT_DONE.js"
+import D_MOVE_TO_DONE from "./dispatches/D_MOVE_TO_DONE.js"
 
 
 
@@ -27,6 +30,9 @@ let store = {
         else if (action.type === actions.ADD_INPUT_TASKS) { D_ADD_INPUT_TASKS(this) }
         else if (action.type === actions.MOVE_CARD_TO_ARCHIVE) {D_MOVE_CARD_TO_ARCHIVE(action, this)}
         else if (action.type === actions.MOVE_CARD_TO_INPROCASS) {D_MOVE_CARD_TO_INPROCASS(action, this)}
+        else if (action.type === actions.DELETE_PROJECT) {D_DELETE_PROJECT(action, this)}
+        else if (action.type === actions.MOVE_IN_NOT_DONE) {D_MOVE_IN_NOT_DONE(action, this)}
+        else if (action.type === actions.MOVE_TO_DONE) {D_MOVE_TO_DONE(action, this)}
         else console.log("Нет совспадения по action")
     }
 }
@@ -36,6 +42,9 @@ export let addNewProject = () => ({ type: actions.ADD_NEW_PROJECT });
 export let addInputTasks = () => ({ type: actions.ADD_INPUT_TASKS });
 export let moveCardToArchive = (cardID) => ({type: actions.MOVE_CARD_TO_ARCHIVE, cardId: cardID });
 export let moveCardToInProcess = (cardID) => ({type: actions.MOVE_CARD_TO_INPROCASS, cardId: cardID });
+export let deleteCardProject = (cardID) => ({type: actions.DELETE_PROJECT, cardId: cardID });
+export let moveInNotDone = (cardID) => ({type: actions.MOVE_IN_NOT_DONE, cardId: cardID })
+export let moveCardToDone = (cardID) => ({type: actions.MOVE_TO_DONE, cardId: cardID })
 
 
 export default store;
