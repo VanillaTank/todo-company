@@ -19,7 +19,7 @@ const Create = (props) => {
     }
 
     let addProject = (e) => {
-        e.preventDefault();
+        // e.preventDefault();
         props.dispatch( addNewProject() )
     }
 
@@ -29,15 +29,15 @@ const Create = (props) => {
         
     }
 
-    let tasksInputs = props.newTaskData.tasks.map((el, index)=> <input type="text" onChange={inputChangeHandler} value={ el.text } placeholder="Задача" name={"task_" + index}/>)
+    let tasksInputs = props.newTaskData.tasks.map((el, index)=> <input type="text" onChange={inputChangeHandler} value={ el.text } placeholder="Задача" name={"task_" + index} required/>)
 
     return (
         <div>
               <NavLink to={"/"}>Посмотреть</NavLink>
             <h3>Создать проект</h3>
             <form>
-                <input type="text" onChange={inputChangeHandler} value={ title } placeholder="Название проекта" name="title"/>
-                <input type="text" onChange={inputChangeHandler} value={ descr } placeholder="Описание" name="descr"/>
+                <input type="text" onChange={inputChangeHandler} value={ title } placeholder="Название проекта" name="title" required/>
+                <input type="text" onChange={inputChangeHandler} value={ descr } placeholder="Описание" name="descr" required/>
                 {tasksInputs}
 
 
