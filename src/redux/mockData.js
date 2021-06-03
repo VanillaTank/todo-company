@@ -1,7 +1,7 @@
 const mockData = {
     dataProject: [
         {
-            id: 1,
+            id: 0,
             title: "Создание своего таскера",
             descr: "Мне нужен тренировочный проект по реакту и менеджер задач под мои вкусы. К-комбо!",
             tasks: [
@@ -11,10 +11,11 @@ const mockData = {
                 { text: "Прописать добавление задач", complete: "false", id:4  },
                 { text: "Законнектить с базой данных", complete: "false" , id:5 }
             ],
-            complete: false
+            complete: false,
+            isArchive: false
         },
         {
-            id: 2,
+            id: 1,
             title: "Дело номер 2",
             descr: "Деловое дело, чтобы делать дело",
             tasks: [
@@ -22,10 +23,11 @@ const mockData = {
                 { text: "часть дела 2", complete: "true", id:2 },
                 { text: "часть дела 3", complete: "true", id:3 }
             ],
-            complete: true
+            complete: false,
+            isArchive: true
         },
         {
-            id: 3,
+            id: 2,
             title: "Дело номер 3",
             descr: "Деловое дело, чтобы делать дело",
             tasks: [
@@ -33,7 +35,8 @@ const mockData = {
                 { text: "часть дела 2", complete: "true", id:2 },
                 { text: "часть дела 3", complete: "false", id:3 }
             ],
-            complete: false
+            complete: false,
+            isArchive: false
         }
     ],
 
@@ -48,7 +51,7 @@ const mockData = {
         ],
         complete: false
     }
-     // не замена не удалять до сюда!!!
+    // не замена не удалять до сюда!!!
 }
 
 export default mockData;
